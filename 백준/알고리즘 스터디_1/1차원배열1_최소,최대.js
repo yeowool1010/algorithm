@@ -1,21 +1,17 @@
-let A = Number(prompt("첫 번째 수 입력"));
-let B = Number(prompt("두 번째 수 입력"));
+let input = prompt("배열 입력\n공백으로 구분하여 입력.");
+let arr = input.split(" ");
 
 function solution() {
     let result = "";
-    if(A > B) {
-        result = ">"
-    } else if(A < B) {
-        result = "<"
-    } else if(A === B) {
-        result = "=="
-    }
+    let maxNum = Math.max(...arr);
+    let minNum = Math.min(...arr);
+
+    result = `${minNum} ${maxNum}`;
     alert(result);
 }
 
 solution();
 
 
-// A가 B보다 큰 경우에는 '>'를 출력한다.
-// A가 B보다 작은 경우에는 '<'를 출력한다.
-// A와 B가 같은 경우에는 '=='를 출력한다.
+// N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오.
+// 첫째 줄에 주어진 정수 N개의 최솟값과 최댓값을 공백으로 구분해 출력한다.
