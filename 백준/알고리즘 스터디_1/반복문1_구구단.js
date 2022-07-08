@@ -1,14 +1,11 @@
-let A = Number(prompt("첫 번째 수 입력"));
-let B = Number(prompt("두 번째 수 입력"));
+let num = Number(prompt("숫자 입력"));
 
 function solution() {
     let result = "";
-    if(A > B) {
-        result = ">"
-    } else if(A < B) {
-        result = "<"
-    } else if(A === B) {
-        result = "=="
+    let val = 0;
+    for(let i = 1; i <= 9; i++) {
+        val = num * i
+        result += `${num} * ${i} = ${val}` + `\n`
     }
     alert(result);
 }
