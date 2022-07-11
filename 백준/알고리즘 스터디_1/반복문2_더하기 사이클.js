@@ -6,10 +6,10 @@ function solution() {
     let i = 0;
     while(true) {
         i++
-
-        sum = Math.floor(num / 10) + num % 10;
+        // sum = Math.floor(num / 10) + num % 10;
+        sum = Number(num[0]) + Number(num[1]);
         num = (num % 10) * 10 + sum % 10;
-        // sum = Number(num[0]) + Number(num[1]);
+        console.log(num)
         // if(sum.length === 1) {
         //     num = Number(num[1]) + Number(sum[0]);
         // } 
@@ -20,7 +20,6 @@ function solution() {
             break;
         }
     }
-    alert(i);
 }
 
 solution();
