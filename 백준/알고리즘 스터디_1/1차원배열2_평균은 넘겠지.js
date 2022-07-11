@@ -9,10 +9,20 @@ let arr = input.split(',');
 
 function solution() {
     
-    let studentAver = 0;
     let sum = 0;
-    let ClassAver = 0;
+    let classAver = 0;
+    let smartStudent = 0;
+    let clacss = 0;
     let result = "";
+    let newArr = [];
+
+
+    for(let i = 0; arr.length; i++) {
+        newArr = arr[i].split(" ");
+        console.log(newArr) //  각 반별로 쪼개서 배열로 받기
+        clacss = newArr[0]; 
+    }
+
     
     alert(result);
 }

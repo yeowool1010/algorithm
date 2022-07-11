@@ -12,6 +12,14 @@
 <pre>
   백준답안
 
+  let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
 
+  let count = Number(input[0]);
+  let numArr = input[1].split(' ');
+    
+  let maxNum = Math.max(...numArr);
+  let minNum = Math.min(...numArr);
+    
+  console.log(`${minNum} ${maxNum}`);
 </pre>
 </html>
