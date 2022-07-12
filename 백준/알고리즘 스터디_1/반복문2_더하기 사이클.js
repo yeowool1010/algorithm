@@ -1,4 +1,4 @@
-let input = prompt("숫자입력");
+const input = prompt("숫자입력");
 
 function solution() {
     let num = input.split();
@@ -8,19 +8,18 @@ function solution() {
     while (num !== input) {
         i++;
 
-        sum  = num[0] + num[1];
+        sum = num[0] + num[1];
+        console.log(sum)
         if(sum.length === 1) {
              num = sum[0] + num[1];
-        } else if(sum.length === 2) {
-             num = sum[1] + num[1]
-        }
+            } else if(sum.length === 2) {
+                num = sum[1] + num[1]
+            }
+            console.log(num)
     // sum = Math.floor(num / 10) + num % 10;
     // num = (num % 10) * 10 + sum % 10; 
 
-        // if (num === input) {
-        //     }    
-        //     break;
-        // }
+        break;
     }
     console.log(i)
 }
