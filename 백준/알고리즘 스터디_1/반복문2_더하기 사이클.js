@@ -9,9 +9,10 @@ function solution() {
         i++;
 
         sum = num[0] + num[1];
-        console.log(sum)
+        console.log(num[0])
         if(sum.length === 1) {
              num = sum[0] + num[1];
+             console.log(sum[0])
             } else if(sum.length === 2) {
                 num = sum[1] + num[1]
             }
